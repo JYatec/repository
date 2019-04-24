@@ -1,0 +1,170 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+
+	}
+
+HEADER{
+	background:#fff;
+	width:780;
+	height:120px;
+	position:relative;
+	}
+
+#contenedor{
+	
+	height:900px;
+	width:850px;
+	margin-right:auto;
+	margin-left:auto;
+	
+	}
+
+
+/*MENU*/
+#MENU{
+	
+	width:90%;
+	max-width:2000px;
+	height: 130px;
+	padding-left:auto;
+	padding-right:auto;
+	padding-top:5px;
+	overflow:hidden;
+	text-align:center;
+	margin-right: auto;/*auto centrado*/
+	margin-left: auto;/*auto centrado*/
+	
+	}
+	
+NAV #MENU{
+	
+	top:-20px; /*Le damos una separación superior*/
+    position: absolute; /*Convertimos el contenedor en posición absoluta*/
+    left:0; /*Con left:0; y right:0; centramos el contenedor*/
+    right:0;
+	margin:20px auto;
+	width:90%;
+	max-width:1000px;
+	
+	}
+	
+NAV UL{
+	/*LINEA DE CODIGO PARA QUITARLE LOS PUNTOS A LAS LISTAS*/
+	list-style:none;
+	
+	 }
+	 
+NAV > UL {/*LINEA DE CODIGO PARA QUE EL PROGRAMA SEPA QUE DESPUES DE LA ETIQUETA "NAV" LOS UL SE MODIFICARAN SI SON SUB-MENU NO LOS AFECTARA*/
+	
+	display:table;/*LINEA DE CODIGO PARA AGREGAR UNA CAJA LA CUAL CONTENDRA LOS BOTONES LOS CUALES TENDRAN UN TAMAÑO SIMILAR*/
+	width:100%;
+	background:#000;
+	position:relative;/*AYUDARA PARA EL MENU DESPLIGABLE A QUE SEA UNA POSICION RELATIVA*/
+	}
+	
+NAV > UL LI {/*ESTA LINEA AYUDARA A UBICAR EL MENU*/
+	display:table-cell;/*NUESTROS "LI" TENDRAN UN POSICION DE CELDA*/
+	
+	}
+
+	
+/*SUB-MENU*/
+NAV  > UL > LI:hover > UL{
+	display:block;
+	height:100%;
+	
+	}
+	
+NAV > UL > LI  > UL {/*TAMAÑO DEL DESPEGABLE SUB-MENU*/
+	display:block;
+	position:absolute;
+	background:#000;
+	left:0;
+	right:0;
+	/*ANIMACION SUB-MENU*/
+	overflow:hidden;
+	height:0%;
+	/*CODIGO COPIADO DE LA PAGINA "CSS3 GENERATOR" Y ESTO AYUDARA A LA TRANSICION DE NUESTRA ANIMACION*/
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+		}
+		
+	
+NAV > UL LI A	{/*ESTILO DEL MENU*/
+	
+	color:#fff;
+	display:block;/*ESTA LINEA AYUDA A DARLE UN ESPACIO ADECUADO A LAS PALABRAS DEL MENU*/
+	line-height:20px;
+	padding:20px;
+	position:relative;
+	text-align:center;
+	text-decoration:none;/*LINEA QUE QUITARA EL HIMPERBINCULO DE LOS BOTONES*/
+	
+	/*CODIGO COPIADO DE LA PAGINA "CSS3 GENERATOR" Y ESTO AYUDARA A LA TRANSICION DE NUESTRA ANIMACION*/
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	}
+	
+NAV  > UL > LI  > UL  > LI  a:hover {
+	background:#5da5a2;
+	
+	}
+	
+NAV > UL  > LI  > a  span {/*LINEA QUE MODIFICARA LOS ELEMENTOS EN LINEA*/
+
+	background:#174459;
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px;
+	/*CODIGO COPIADO DE LA PAGINA "CSS3 GENERATOR" Y ESTO AYUDARA A LA TRANSICION DE NUESTRA ANIMACION*/
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	
+	}
+	
+NAV > UL  > LI  > a  span  .icon{/*LINEA PARA CENTRAR NUESTROS ICONOS*/
+	display:block;
+	line-height:60px;
+	
+	}
+	
+NAV > UL > LI  > a:hover  > SPAN {/*ESTA LINEA AFECTARA A NUESTROS SPAN CUANDO PASEMOS NUESTRO PUNTERO*/
+	top:0;	
+}	
+
+/*COLORES*/
+NAV UL LI  A .PRIMERO {
+	background:#0e5061;	
+	}
+	
+NAV UL LI  A .SEGUNDO {
+	background:#5da5a2;	
+	}
+	
+NAV UL LI  A .TERCERO {
+	background:#F25724;	
+	}	
+	
+NAV UL LI  A .CUARTO {
+	background:#174459;	
+	}
+	
+NAV UL LI  A .QUINTO{
+	background:#37A4D9;	
+	}
